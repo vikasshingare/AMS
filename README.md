@@ -22,7 +22,7 @@ Attendance Management System is a web application based on Laravel which keeps t
 
 ### Install & Setup
 
-To setup and install Attendance Management System project, follow the below steps:
+To setup and install AMS, follow the below steps:
 - Clone this project by the command: 
 
 ```
@@ -32,7 +32,7 @@ $ git clone https://github.com/vikasshingare/AMS
 - Then switch to the project folder by the bellow query:
 
 ```
-$ cd Attendance_Management_System
+$ cd AMS
 ```
 
 - Then open ```.env``` file and update database credentials.
@@ -71,6 +71,6 @@ $ php artisan serve
 - Git to versionning your work.
 
 ### Authors
-👤 **Ali**
+👤 **Vikas Shingare**
 
 - GitHub: [@vikas](https://github.com/vikasshingare)
