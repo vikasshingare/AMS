@@ -13,6 +13,8 @@ use Illuminate\Routing\Controller;
 use App\Http\Requests\AttendanceEmp;
 use Illuminate\Support\Facades\Hash;
 
+use function PHPUnit\Framework\isEmpty;
+
 class AttendanceController extends Controller
 {   
     //show attendance 
@@ -28,8 +30,9 @@ class AttendanceController extends Controller
     }
  
     public  function uploadData(Request $request){
+      
         Excel::import(new AttendanceImport, $request->file);
-        return $request;
+   return redirect()->back()->with('success');
 
     }
     

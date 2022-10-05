@@ -58,7 +58,7 @@
                         </div> --}}
                         <div class="form-group">
                             <label for="schedule" class="col-sm-12 control-label">Upload File</label>
-                            <input type="file" name="file" class="form-control" accept=".csv" >
+                            <input type="file" required name="file" class="form-control" accept=".csv" >
                         </div>
 
                         <div class="form-group">

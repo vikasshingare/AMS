@@ -23,15 +23,17 @@ class DatabaseSeeder extends Seeder
             'email' => 'vikas@gmail.com',
             'password' => Hash::make('password'),
         ]);
-        $user= Schedule::create([
-            'slug' => 'General Shift',
-            'time_in' => '09:30:00',
-            'time_out' =>'06:30:00',
-        ]);
+       
         $role = Role::create([
             'slug' => 'admin',
             'name' => 'Adminstrator',
         ]);
         $user->roles()->sync($role->id);
+
+        $Schedule= Schedule::create([
+            'slug' => 'General Shift',
+            'time_in' => '09:30:00',
+            'time_out' =>'06:30:00',
+        ]);
     }
 }
